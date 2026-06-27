@@ -102,8 +102,12 @@ In Xcode, outgoing network connections require an explicit entitlement configura
 
 `iOS` `iPhone 13 Pro Max` `High complexity` `~2.5 pages A4 spec`
 
-![AMRAP.log iOS Crossfit Timer 1](../screenshots/apps/AMRAPlog1.png)
-![AMRAP.log iOS Crossfit Timer 2](../screenshots/apps/AMRAPlog1.png)
+<table>
+  <tr>
+    <td><img src="../screenshots/apps/AMRAPlog1.png" width="300"></td>
+    <td><img src="../screenshots/apps/AMRAPlog2.png" width="300"></td>
+  </tr>
+</table>
 
 ### What It Does
 
