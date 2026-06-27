@@ -13,6 +13,7 @@ Manual testing of live production websites. All bugs were found independently us
 ---
 
 ## Bug 1 · tribuna.com · Poll Widget Rendering Failure
+<a href="#bug-reports">↑ Back to contents</a>
 
 **Environment:** Google Chrome 148.0.7778.179 / iPhone 12 Pro (Chrome DevTools emulation)
 
@@ -59,6 +60,7 @@ Server returns `HTTP 200 OK` with valid poll data. Frontend fails to render it.
 ---
 
 ## Bug 2 · tribuna.com · False Success Message on Registration Failure
+<a href="#bug-reports">↑ Back to contents</a>
 
 **Environment:** Google Chrome 148.0.7778.179
 
@@ -96,6 +98,7 @@ The frontend renders a success state regardless of the server response code.
 ---
 
 ## Bug 3 · comfy.ua · False "Out of Stock" Message When Cart Limit Exceeded
+<a href="#bug-reports">↑ Back to contents</a>
 
 **Environment:** comfy.ua (production)
 
@@ -134,6 +137,7 @@ The frontend handles the exception incorrectly — translating a database/cart l
 ---
 
 ## Bug 4 · chip-mag.com · Test Product Data Published in Production
+<a href="#bug-reports">↑ Back to contents</a>
 
 **Environment:** chip-mag.com (production)
 
@@ -164,6 +168,7 @@ This is a clear case of **test data leaking into the production environment**. T
 ---
 
 ## Bug 5 · novaposhta.ua · Calculator Modal Close Button Unresponsive on iOS
+<a href="#bug-reports">↑ Back to contents</a>
 
 **Environment:** iPhone 13 Pro Max · iOS 18.3 · Safari 18.3 · Safari Web Inspector (real device, USB)
 
