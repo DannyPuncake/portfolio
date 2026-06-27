@@ -33,8 +33,8 @@ Widget slots appear completely blank and broken — no text, no voting options, 
 Widget slots appear with data, player icons, and voting options.
 
 ### Screenshots
-![Poll widget broken](../../screenshots/bug-reports/tribuna-bug1.png)
-![Network response 200 OK](../../screenshots/bug-reports/tribuna-bug2.png)
+![Poll widget broken](../screenshots/bug-reports/tribuna-bug1.png)
+![Network response 200 OK](../screenshots/bug-reports/tribuna-bug2.png)
 
 ### Notes
 In Chrome DevTools, upon clicking "Show more", a single POST request to `.../graphql/` is sent. The server successfully returns **HTTP 200 OK** with a valid JSON response containing full poll data and non-null options. Rendering and data-binding failure occur strictly on the frontend.
@@ -82,8 +82,8 @@ The UI displays a success message **"Завершіть реєстрацію"** 
 Action blocked due to invalid email format. An error message shown to the user.
 
 ### Screenshots
-![False success message UI](../../screenshots/bug-reports/tribuna-bug1.png)
-![DevTools showing HTTP 400](../../screenshots/bug-reports/tribuna-bug2.png)
+![False success message UI](../screenshots/bug-reports/tribuna-bug1.png)
+![DevTools showing HTTP 400](../screenshots/bug-reports/tribuna-bug2.png)
 
 ### Notes
 DevTools Network tab shows **HTTP 400** and **HTTP 429**.
@@ -119,8 +119,8 @@ The system should block adding more items and display a clear, honest warning:
 > «У кошик можна додати не більше X товарів»
 
 ### Screenshots
-![False out of stock popup](../../screenshots/bug-reports/comfy-bug1.png)
-![API error 30001 in DevTools](../../screenshots/bug-reports/comfy-bug2.png)
+![False out of stock popup](../screenshots/bug-reports/comfy-bug1.png)
+![API error 30001 in DevTools](../screenshots/bug-reports/comfy-bug2.png)
 
 ### Notes
 API response body:
@@ -157,8 +157,8 @@ The actual product name (`"Інформаційний дисплей Iiyama TW10
 The category contains real, active products with correct commercial titles, actual product photos, and properly mapped specification fields.
 
 ### Screenshots
-![Test product in production](../../screenshots/bug-reports/chip-mag-bug1.png)
-![Misaligned database fields](../../screenshots/bug-reports/chip-mag-bug2.png)
+![Test product in production](../screenshots/bug-reports/chip-mag-bug1.png)
+![Misaligned database fields](../screenshots/bug-reports/chip-mag-bug2.png)
 
 ### Notes
 This is a clear case of **test data leaking into the production environment**. The system reads the string from the internal "web price tag" field and displays it as the main Product Title on the frontend, while the real product name is buried in the specs.
@@ -188,8 +188,8 @@ The close button receives the tap (visual feedback visible) but the modal does n
 The modal closes immediately on the first tap of ✕, regardless of the state of any third-party analytics requests.
 
 ### Screenshots
-![Network log during failed taps](../../screenshots/bug-reports/novaposhta-bug1.png)
-![inter event triggers modal close](../../screenshots/bug-reports/novaposhta-bug2.png)
+![Network log during failed taps](../screenshots/bug-reports/novaposhta-bug1.png)
+![inter event triggers modal close](../screenshots/bug-reports/novaposhta-bug2.png)
 
 ### Network Log Pattern
 
