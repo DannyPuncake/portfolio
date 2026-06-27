@@ -2,7 +2,7 @@
 
 **Junior QA Engineer** · Khmelnytskyi, Ukraine · Remote
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Denys_Blinov-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/denys-blinov)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Denys_Blinov-0077B5?style=flat&logo=linkedin)](https://www.linkedin.com/in/denys-b-68875b139/)
 [![Email](https://img.shields.io/badge/Email-danny.puncake@gmail.com-D14836?style=flat&logo=gmail)](mailto:danny.puncake@gmail.com)
 
 ---
