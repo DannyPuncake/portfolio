@@ -188,7 +188,7 @@ The modal closes immediately on the first tap of ✕, regardless of the state of
 ### Screenshots
 <img src="../screenshots/bug-reports/novaposhta-bug1.png" width="350">
 <br><br>
-<img src="../screenshots/bug-reports/novaposhta-bug2.png" width="600">
+<img src="../screenshots/bug-reports/novaposhta-bug2.png" width="1050">
 
 ### Network Log Pattern
 
