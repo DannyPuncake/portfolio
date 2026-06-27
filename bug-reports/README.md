@@ -186,8 +186,9 @@ The close button receives the tap (visual feedback visible) but the modal does n
 The modal closes immediately on the first tap of ✕, regardless of the state of any third-party analytics requests.
 
 ### Screenshots
-<img src="../screenshots/bug-reports/novaposhta-bug1.png" width="600">
-![inter event triggers modal close](../screenshots/bug-reports/novaposhta-bug2.png)
+<img src="../screenshots/bug-reports/novaposhta-bug1.png" width="350">
+<br><br>
+<img src="../screenshots/bug-reports/novaposhta-bug2.png" width="600">
 
 ### Network Log Pattern
 
