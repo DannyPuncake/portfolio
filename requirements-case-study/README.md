@@ -1,7 +1,7 @@
 # Requirements Analysis Case Study
 ### How Requirements Quality Impacts Product Outcomes
 
-**Denys Blinov · Junior QA Engineer · 2025–2026**
+**Denys Blinov · Junior QA Engineer · 28.06.2026**
 
 ---
 
@@ -20,10 +20,11 @@ The primary goal was practical: building tools for personal use. The secondary o
 ---
 
 ## Project 1: Claude Token Tracker
+[↑ Back to Overview](#overview)
 
 `macOS` `menu bar` `Low complexity` `3–4 sentence spec`
 
-<!-- INSERT SCREENSHOT: macOS menu bar showing token tracker with pixel-style bars -->
+![Claude Token Tracker](../screenshots/apps/ClaudeTokenTracker.png)
 
 ### What It Does
 
@@ -47,7 +48,7 @@ The AI implementation defaulted to a mock server for API requests, meaning the t
 
 > **Root cause:** The real API endpoint was not specified in requirements. Without it, the implementation filled the gap with a mock. **A requirement must be explicit, not assumed.**
 
-### Lessons Learned
+### 🔵 Lessons Learned
 
 - Even for a 3-sentence spec, technical constraints (API rate limits, authentication endpoints) must be included
 - An implementation that compiles and runs is not the same as a correct implementation
@@ -56,10 +57,11 @@ The AI implementation defaulted to a mock server for API requests, meaning the t
 ---
 
 ## Project 2: Twitch Stream Tracker
+[↑ Back to Overview](#overview)
 
 `macOS` `menu bar` `Medium complexity` `7-point spec`
 
-<!-- INSERT SCREENSHOT: macOS menu bar showing Twitch tracker with live channel status -->
+![Twitch Streamer Tracker](../screenshots/apps/TwitchStreamTracker.png)
 
 ### What It Does
 
@@ -87,7 +89,7 @@ In Xcode, outgoing network connections require an explicit entitlement configura
 
 > **Observation:** Silent network failures are harder to detect than explicit errors. This reinforced the value of checking network logs even when the UI shows no visible error state.
 
-### Lessons Learned
+### 🔵 Lessons Learned
 
 - More detailed requirements reduced functional ambiguity but created false confidence that the spec was complete
 - Infrastructure requirements (auth, permissions, rate limits) are a **distinct category** that must be researched independently of feature requirements
@@ -96,10 +98,12 @@ In Xcode, outgoing network connections require an explicit entitlement configura
 ---
 
 ## Project 3: AMRAP.log — iOS CrossFit Timer
+[↑ Back to Overview](#overview)
 
 `iOS` `iPhone 13 Pro Max` `High complexity` `~2.5 pages A4 spec`
 
-<!-- INSERT SCREENSHOT: iOS app showing timer interface with multiple modes -->
+![AMRAP.log iOS Crossfit Timer 1](../screenshots/apps/AMRAPlog1.png)
+![AMRAP.log iOS Crossfit Timer 2](../screenshots/apps/AMRAPlog1.png)
 
 ### What It Does
 
@@ -137,7 +141,7 @@ The Mixed timer mode, which contained 10 configurable parameters, exhibited noti
 
 > **Root cause:** The Mixed mode requirement contained only one line describing the 10 settings. The implementation borrowed UI components from other modes to fill the gaps. The resulting view was over-complex and unoptimised. **Insufficient specification of a complex mode led to an implementation that worked functionally but degraded performance.**
 
-### Lessons Learned
+### 🔵 Lessons Learned
 
 - Requirements at 2.5 pages still missed critical constraints — completeness is not measured by length
 - Real-device acceptance testing revealed issues that emulators and code review would not catch (one-handed usability, button touch targets, performance feel)
@@ -147,6 +151,7 @@ The Mixed timer mode, which contained 10 configurable parameters, exhibited noti
 ---
 
 ## Cross-Project Conclusions
+[↑ Back to Overview](#overview)
 
 ### Requirements Completeness vs. Length
 
@@ -171,4 +176,3 @@ The most significant defects in AMRAP.log were only discovered through daily rea
 
 ---
 
-*Denys Blinov · danny.puncake@gmail.com · Junior QA Engineer*
