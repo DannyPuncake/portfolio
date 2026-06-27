@@ -28,7 +28,7 @@
 Manual testing of live production websites. Bug reports covering API/UI mismatch, mobile touch event handling, server-side validation, and test data in production. Tested using Chrome DevTools, Safari Web Inspector (real device), and Postman.
 
 ### 📋 [Requirements Analysis Case Study](./requirements-case-study/)
-A hands-on case study across three personal iOS/macOS projects of increasing complexity, documenting how requirements quality directly impacts product outcomes — built and tested through AI-assisted (vibe coding) development.
+A hands-on case study across three personal iOS/macOS pet-projects of increasing complexity, documenting how requirements quality directly impacts product outcomes — built and tested through AI-assisted (vibe coding) development. Tools: Claude.ai, XCode, Postman.
 
 ---
 
