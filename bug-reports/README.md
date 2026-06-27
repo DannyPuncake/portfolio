@@ -2,13 +2,13 @@
 
 Manual testing of live production websites. All bugs were found independently using Chrome DevTools, Safari Web Inspector (real device, USB), and Postman.
 
-| # | Site | Title | Type | Severity |
-|---|---|---|---|---|
-| 1 | [tribuna.com](#bug-1--tribunacom--poll-widget-rendering-failure) | Poll widget rendering failure after lazy load | API/UI mismatch | Medium |
-| 2 | [tribuna.com](#bug-2--tribunacom--false-success-message-on-registration-failure) | False success message on registration failure | API/UI mismatch | High |
-| 3 | [comfy.ua](#bug-3--comfyua--false-out-of-stock-message-when-cart-limit-exceeded) | False "Out of stock" when cart limit exceeded | API/UI mismatch | High |
-| 4 | [chip-mag.com](#bug-4--chip-magcom--test-data-published-in-production) | Test product data published in production | Data integrity | High |
-| 5 | [novaposhta.ua](#bug-5--novaposhtaua--calculator-modal-close-button-unresponsive-on-ios) | Calculator modal close button unresponsive on iOS | Mobile/Functional | Medium |
+| # | Site | Title | Type |
+|---|---|---|---|
+| 1 | [tribuna.com](#bug-1--tribunacom--poll-widget-rendering-failure) | Poll widget rendering failure after lazy load | API/UI mismatch |
+| 2 | [tribuna.com](#bug-2--tribunacom--false-success-message-on-registration-failure) | False success message on registration failure | API/UI mismatch |
+| 3 | [comfy.ua](#bug-3--comfyua--false-out-of-stock-message-when-cart-limit-exceeded) | False "Out of stock" when cart limit exceeded | API/UI mismatch |
+| 4 | [chip-mag.com](#bug-4--chip-magcom--test-data-published-in-production) | Test product data published in production | Data integrity |
+| 5 | [novaposhta.ua](#bug-5--novaposhtaua--calculator-modal-close-button-unresponsive-on-ios) | Calculator modal close button unresponsive on iOS | Mobile/Functional |
 
 ---
 
@@ -16,7 +16,7 @@ Manual testing of live production websites. All bugs were found independently us
 
 **Environment:** Google Chrome 148.0.7778.179 / iPhone 12 Pro (Chrome DevTools emulation)
 
-**Type:** `API/UI mismatch` **Severity:** `Medium`
+**Type:** `API/UI mismatch`
 
 ### Pre-conditions
 Open `https://ua.tribuna.com/uk/` in incognito window (not logged in, cache and cookies cleared).
@@ -63,7 +63,7 @@ Server returns `HTTP 200 OK` with valid poll data. Frontend fails to render it.
 
 **Environment:** Google Chrome 148.0.7778.179
 
-**Type:** `API/UI mismatch` **Severity:** `High`
+**Type:** `API/UI mismatch`
 
 ### Pre-conditions
 Open `https://ua.tribuna.com/uk/`, not logged in. Clear `email12@-domain.com` from database if existing.
@@ -101,7 +101,7 @@ The frontend renders a success state regardless of the server response code.
 
 **Environment:** comfy.ua (production)
 
-**Type:** `API/UI mismatch` **Severity:** `High`
+**Type:** `API/UI mismatch`
 
 ### Pre-conditions
 Open `https://comfy.ua/`
@@ -139,7 +139,7 @@ The frontend handles the exception incorrectly — translating a database/cart l
 
 **Environment:** chip-mag.com (production)
 
-**Type:** `Data integrity` **Severity:** `High`
+**Type:** `Data integrity`
 
 ### Pre-conditions
 Open `https://chip-mag.com/`
@@ -169,7 +169,7 @@ This is a clear case of **test data leaking into the production environment**. T
 
 **Environment:** iPhone 13 Pro Max · iOS 18.3 · Safari 18.3 · Safari Web Inspector (real device, USB)
 
-**Type:** `Mobile/Functional` **Severity:** `Medium`
+**Type:** `Mobile/Functional`
 
 ### Pre-conditions
 Open `https://novaposhta.ua/` in Safari on iPhone 13 Pro Max.
