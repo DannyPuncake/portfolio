@@ -34,7 +34,6 @@ Widget slots appear with data, player icons, and voting options.
 
 ### Screenshots
 ![Poll widget broken](../screenshots/bug-reports/tribuna-bug1.png)
-![Network response 200 OK](../screenshots/bug-reports/tribuna-bug2.png)
 
 ### Notes
 In Chrome DevTools, upon clicking "Show more", a single POST request to `.../graphql/` is sent. The server successfully returns **HTTP 200 OK** with a valid JSON response containing full poll data and non-null options. Rendering and data-binding failure occur strictly on the frontend.
@@ -82,8 +81,7 @@ The UI displays a success message **"Завершіть реєстрацію"** 
 Action blocked due to invalid email format. An error message shown to the user.
 
 ### Screenshots
-![False success message UI](../screenshots/bug-reports/tribuna-bug1.png)
-![DevTools showing HTTP 400](../screenshots/bug-reports/tribuna-bug2.png)
+![False success message UI, DevTools showing HTTP 400](../screenshots/bug-reports/tribuna-bug2.png)
 
 ### Notes
 DevTools Network tab shows **HTTP 400** and **HTTP 429**.
@@ -188,7 +186,7 @@ The close button receives the tap (visual feedback visible) but the modal does n
 The modal closes immediately on the first tap of ✕, regardless of the state of any third-party analytics requests.
 
 ### Screenshots
-![Network log during failed taps](../screenshots/bug-reports/novaposhta-bug1.png)
+<img src="../screenshots/bug-reports/novaposhta-bug1.png" width="600">
 ![inter event triggers modal close](../screenshots/bug-reports/novaposhta-bug2.png)
 
 ### Network Log Pattern
